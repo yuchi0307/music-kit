@@ -1,0 +1,87 @@
+	.keys{
+	align-items: center;
+	justify-content: center;
+	}
+
+	.key{
+		transition: all 0.07s;
+		padding: 1rem .5rem;
+		text-align: center;
+	}
+
+	kbd {
+  	display: block; /*換行*/
+  	font-size: 25px;
+    padding: 15px 55px;
+	}
+
+	div{
+		width: 125px;
+	}
+
+
+	
+/*==============
+桌機 寬度>600的樣式
+===============*/
+@media screen and (min-width: 600px){
+	.keys{
+	display: flex;
+  	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	}
+
+	kbd {
+  	display: block; /*換行*/
+  	font-size: 30px;
+  	padding-left: 40px;
+    padding-top: 20px;
+	}
+
+	.key{
+	margin: -6px;
+	padding: 3px;
+	border-radius: 100px;
+	}
+
+	div{
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	}
+}
+
+
+
+/*--------------------------
+鍵盤敲擊後會出現.playing的css效果
+--------------------------*/
+.playing{
+	transform: scale(1.1);
+	border-color: white;
+	box-shadow: 0 0 10px grey;
+}
+
+
+[data-key="65"]{
+	background-color: #CEBEBE;
+}
+
+[data-key="83"]{
+	background-color: #ECE2D0;
+}
+
+[data-key="68"]{
+	background-color: #D5B9B2;
+}
+
+[data-key="70"]{
+	background-color: #A26769;
+}
+
+[data-key="71"]{
+	background-color: #6D2E46;
+}
+
+

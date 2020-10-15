@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Drum Kit</title>
+	<link rel="stylesheet" type="text/css" href="musickit.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+</head>
+
+<body>
+	<div class="keys">
+		<div data-key="65" class="key">
+			<kbd>A</kbd>
+			<span class="sound">❤️</span>
+		</div>
+		<div data-key="83" class="key">
+			<kbd>S</kbd>
+			<span class="sound">🧡</span>
+		</div>
+		<div data-key="68" class="key">
+			<kbd>D</kbd>
+			<span class="sound">💛</span>
+		</div>
+		<div data-key="70" class="key">
+			<kbd>F</kbd>
+			<span class="sound">🤎</span>
+		</div>
+		<div data-key="71" class="key">
+			<kbd>G</kbd>
+			<span class="sound">🤍</span>
+		</div>
+	</div>
+	<audio data-key="65" src="music/welcome.mp3"></audio>
+	<audio data-key="83" src="music/red.mp3"></audio>
+	<audio data-key="68" src="music/cartoon.mp3"></audio>
+	<audio data-key="70" src="music/calling.mp3"></audio>
+	<audio data-key="71" src="music/ending.mp3"></audio>
+	<script src="musickit.js"></script>
+</body>
+</html>
